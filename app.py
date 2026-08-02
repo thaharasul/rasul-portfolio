@@ -16,7 +16,15 @@ CORS(app)
 EMAIL = os.getenv("EMAIL")
 APP_PASSWORD = os.getenv("APP_PASSWORD")
 
+from flask import send_from_directory
 
+@app.route("/robots.txt")
+def robots():
+    return send_from_directory(".", "robots.txt")
+
+@app.route("/sitemap.xml")
+def sitemap():
+    return send_from_directory(".", "sitemap.xml")
 @app.route("/")
 def home():
     return render_template("index.html")
