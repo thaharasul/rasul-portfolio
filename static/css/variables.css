@@ -1,0 +1,62 @@
+/* ============================================================
+  Design Tokens — Mohamed Thaha Rasul Portfolio
+   ============================================================ */
+
+:root {
+  /* Color palette */
+  --color-bg:           #f8f1e7;
+  --color-bg-soft:      #fcf6ed;
+  --color-surface:      #fffaf2;
+  --color-text:         #1f2430;
+  --color-text-muted:   rgba(31, 36, 48, 0.74);
+  --color-text-subtle:  rgba(31, 36, 48, 0.6);
+  --color-accent:       #8b5e3c;
+  --color-accent-strong:#6d452d;
+  --color-border:       rgba(139, 94, 60, 0.16);
+  --color-border-strong:rgba(139, 94, 60, 0.28);
+
+  /* Shadows — soft modern, no gradients */
+  --shadow-sm:          0 10px 30px rgba(15, 23, 42, 0.05);
+  --shadow-md:          0 16px 45px rgba(15, 23, 42, 0.08);
+  --shadow-lg:          0 24px 70px rgba(15, 23, 42, 0.12);
+  --shadow-card:        0 10px 30px rgba(15, 23, 42, 0.06);
+  --shadow-card-hover:  0 18px 40px rgba(15, 23, 42, 0.12);
+  --shadow-focus:       0 0 0 3px rgba(205, 213, 224, 0.25);
+
+  /* Typography */
+  --font-sans:          'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono:          'Fira Code', 'Consolas', monospace;
+
+  /* Spacing scale */
+  --space-xs:           0.5rem;
+  --space-sm:           1rem;
+  --space-md:           1.5rem;
+  --space-lg:           2.5rem;
+  --space-xl:           4rem;
+  --space-2xl:          6rem;
+  --space-3xl:          8rem;
+
+  /* Layout */
+  --nav-height:         72px;
+  --max-width:          1140px;
+  --max-width-narrow:   900px;
+  --section-padding:    var(--space-2xl) 0;
+
+  /* Radius */
+  --radius-sm:          6px;
+  --radius-md:          12px;
+  --radius-lg:          20px;
+  --radius-full:        9999px;
+
+  /* Motion */
+  --ease-out:           cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-spring:        cubic-bezier(0.34, 1.56, 0.64, 1);
+  --duration-fast:      0.1s;
+  --duration-base:      0.1s;
+  --duration-slow:      0.1s;
+
+  /* Z-index */
+  --z-nav:              1000;
+  --z-mobile-nav:       998;
+  --z-scroll-top:       900;
+}

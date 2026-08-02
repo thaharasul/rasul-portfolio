@@ -1,0 +1,160 @@
+/* ============================================================
+   Responsive Breakpoints
+   ============================================================ */
+
+/* Large tablet / small laptop */
+@media (max-width: 1024px) {
+  .hero__grid {
+    gap: var(--space-lg);
+  }
+
+  .about__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .contact__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .hero__profile-wrap {
+    width: min(100%, 320px);
+  }
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .hero__grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero__content {
+    order: 2;
+  }
+
+  .hero__visual {
+    order: 1;
+  }
+
+  .hero__bio {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero__actions {
+    justify-content: center;
+  }
+
+  .hero__socials {
+    justify-content: center;
+  }
+
+  .hero__badge {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: calc(-1 * var(--space-md));
+  }
+
+  .hero__side-label {
+    display: none;
+  }
+
+  .skills__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .leadership__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  :root {
+    --section-padding: 4rem 0;
+    --nav-height: 64px;
+  }
+
+  .nav__links,
+  .nav__cta {
+    display: none;
+  }
+
+  .nav__toggle {
+    display: flex;
+  }
+
+  .hero {
+    padding-top: calc(var(--nav-height) + var(--space-lg));
+    min-height: auto;
+    padding-bottom: var(--space-2xl);
+  }
+
+  .hero__scroll {
+    display: none;
+  }
+
+  .about__stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .projects__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .leadership__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .education__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer__links {
+    flex-wrap: wrap;
+  }
+
+  .timeline {
+    padding-left: 2rem;
+  }
+
+  .timeline__item::before {
+    left: calc(-2rem - 5px);
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .about__stats {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero__actions .btn {
+    width: 100%;
+  }
+
+  .cert-card {
+    flex-direction: column;
+  }
+
+  .form-submit {
+    width: 100%;
+  }
+
+  .form-submit .btn {
+    width: 100%;
+  }
+}

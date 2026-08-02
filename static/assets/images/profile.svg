@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Mohamed Thaha Rasul profile placeholder">
+  <rect width="400" height="500" fill="#ffffff"/>
+  <rect x="1" y="1" width="398" height="498" fill="none" stroke="rgba(0,0,0,0.15)" stroke-width="2"/>
+  <circle cx="200" cy="175" r="72" fill="#ADD8E6" stroke="#000" stroke-width="1.5"/>
+  <path d="M80 420 Q80 310 200 310 Q320 310 320 420" fill="#ADD8E6" stroke="#000" stroke-width="1.5"/>
+  <text x="200" y="465" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="rgba(0,0,0,0.45)">Replace with profile.jpg</text>
+  <text x="200" y="40" text-anchor="middle" font-family="Fira Code, monospace" font-size="18" font-weight="600" fill="#000">MTR</text>
+</svg>

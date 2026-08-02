@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohamed Thaha Rasul | Software Engineer & AI/ML Developer</title>
+  <meta name="description" content="Portfolio of Mohamed Thaha Rasul, a Software Engineer and AI & ML Developer focused on Generative AI, LLMs, RAG, scalable backend systems, and modern web products.">
+  <meta name="keywords" content="Mohamed Thaha Rasul, Software Engineer, AI Developer, ML Developer, Full-Stack Developer, Generative AI, LLMs, RAG, Python, Flask, React, TypeScript">
+  <meta name="author" content="Mohamed Thaha Rasul">
+  <meta name="theme-color" content="#f8f0e3">
+  <meta property="og:title" content="Mohamed Thaha Rasul | Software Engineer & AI/ML Developer">
+  <meta property="og:description" content="Software Engineer specializing in AI, ML, Generative AI and Full-Stack Development.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mohammedthaharasul.onrender.com">
+  <meta property="og:image" content="{{ url_for('static', filename='assets/images/WhatsApp Image 2026-07-31 at 7.01.15 PM.jpeg') }}">
+  <link rel="icon" href="{{ url_for('static', filename='assets/icons/favicon.svg') }}" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/variables.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/animations.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+</head>
+
+<body class="intro-active">
+
+  <div class="intro" id="intro" aria-hidden="true">
+    <div class="intro__stage" aria-live="polite">
+      <span class="intro__word is-visible">Thanks For</span>
+      
+      <span class="intro__word">Stopping By.</span>
+      
+    </div>
+  </div>
+
+  <div class="site-shell" id="siteShell">
+  <a href="#hero" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="nav" id="nav" aria-label="Main navigation">
+      <a href="#hero" class="nav__logo" aria-label="Mohamed Thaha Rasul home">
+        <span class="nav__logo-bracket">&lt;</span>Mohamed Thaha Rasul<span class="nav__logo-bracket">/&gt;</span>
+      </a>
+
+      <div class="nav__links" id="navLinks">
+        <a href="#about" class="nav__link" data-section="about"><span class="nav__link-num">01.</span>About</a>
+        <a href="#skills" class="nav__link" data-section="skills"><span class="nav__link-num">02.</span>Skills</a>
+        <a href="#experience" class="nav__link" data-section="experience"><span class="nav__link-num">03.</span>Experience</a>
+        <a href="#projects" class="nav__link" data-section="projects"><span class="nav__link-num">04.</span>Projects</a>
+        <a href="#education" class="nav__link" data-section="education"><span class="nav__link-num">05.</span>Education</a>
+        <a href="#certifications" class="nav__link" data-section="certifications"><span class="nav__link-num">06.</span>Certifications</a>
+        <a href="#contact" class="nav__link" data-section="contact"><span class="nav__link-num">07.</span>Contact</a>
+        <a href="{{ url_for('static', filename='assets/resume/Mohamed_Thaha_Rasul_Resume.pdf') }}" class="nav__link" download="Mohamed_Thaha_Rasul_Resume.pdf">Download Resume</a>
+      </div>
+
+      <a href="#contact" class="btn btn--outline btn--sm nav__cta">Get In Touch</a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileNav">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+    </nav>
+
+    <div class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a href="#about" class="mobile-nav__link">01. About</a>
+      <a href="#skills" class="mobile-nav__link">02. Skills</a>
+      <a href="#experience" class="mobile-nav__link">03. Experience</a>
+      <a href="#projects" class="mobile-nav__link">04. Projects</a>
+      <a href="#education" class="mobile-nav__link">05. Education</a>
+      <a href="#certifications" class="mobile-nav__link">06. Certifications</a>
+      <a href="#contact" class="mobile-nav__link">07. Contact</a>
+      <a href="{{ url_for('static', filename='assets/resume/Mohamed_Thaha_Rasul_Resume.pdf') }}" class="mobile-nav__link" download="Mohamed_Thaha_Rasul_Resume.pdf">Download Resume</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="hero" aria-label="Introduction">
+      <div class="container">
+        <div class="hero__grid">
+          <div class="hero__content">
+            <p class="hero__greeting hero-animate hero-animate--1">Software Developer | AI ML | Generative AI</p>
+            <h1 class="hero__name hero-animate hero-animate--2">Mohamed Thaha Rasul M</h1>
+            <p class="hero__role hero-animate hero-animate--3">
+              <span id="typewriter"></span>
+            </p>
+            <p class="hero__bio hero-animate hero-animate--4">
+              I build practical AI products and full-stack web experiences that turn complex ideas into reliable, user-focused solutions. My work spans Python, Flask, React, LLMs, RAG, vector search, and modern software delivery with a strong focus on performance, clarity, and tangible impact.
+            </p>
+            <div class="hero__actions hero-animate hero-animate--5">
+              <a href="{{ url_for('static', filename='assets/resume/Mohamed_Thaha_Rasul_Resume.pdf') }}" class="btn btn--primary" download="Mohamed_Thaha_Rasul_Resume.pdf">Download Resume</a>
+              <a href="#projects" class="btn btn--outline">Explore Projects</a>
+            </div>
+            <div class="hero__socials hero-animate hero-animate--6">
+              <a href="mailto:thaharasxl@gmail.com" class="hero__social-link" aria-label="Email Mohamed Thaha Rasul">
+                <svg class="hero__social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
+                thaharasxl@gmail.com
+              </a>
+              <a href="tel:+919042268022" class="hero__social-link" aria-label="Call Mohamed Thaha Rasul">
+                <svg class="hero__social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                +91 9042268022
+              </a>
+              <a href="https://www.linkedin.com/in/mdthaharasul001" class="hero__social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                <svg class="hero__social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                LinkedIn
+              </a>
+              <a href="https://github.com/thaharasul" class="hero__social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                <svg class="hero__social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297a12 12 0 00-3.79 23.02c.6.11.82-.26.82-.58v-2.04c-3.34.73-4.04-1.43-4.04-1.43-.54-1.38-1.32-1.75-1.32-1.75-1.08-.74.08-.72.08-.72 1.2.08 1.83 1.24 1.83 1.24 1.06 1.82 2.78 1.29 3.46.99.11-.77.42-1.29.76-1.59-2.67-.31-5.47-1.34-5.47-5.95 0-1.32.47-2.4 1.24-3.25-.12-.31-.54-1.55.12-3.23 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 016.02 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.68.24 2.92.12 3.23.77.85 1.24 1.93 1.24 3.25 0 4.62-2.8 5.64-5.47 5.95.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.58A12 12 0 0012 .297z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+
+          <div class="hero__visual hero-animate hero-animate--7">
+            <div class="hero__profile-wrap profile-ring">
+              <div class="hero__profile-frame">
+                <img
+                  src="{{ url_for('static', filename='assets/images/WhatsApp Image 2026-07-31 at 7.01.15 PM.jpeg') }}"
+                  alt="Mohamed Thaha Rasul — Software Engineer & AI/ML Developer"
+                  class="hero__profile-img"
+                  width="380"
+                  height="475"
+                  loading="eager"
+                  decoding="async"
+                  fetchpriority="high"
+                  onerror="this.onerror=null;this.src='{{ url_for('static', filename='assets/images/profile.svg') }}';"
+                >
+              </div>
+              <div class="hero__profile-accent" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__scroll scroll-indicator" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+
+      <div class="hero__side-label" aria-hidden="true"> Chennai · Tamil Nadu · India </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <p class="section-label reveal">01. About Me</p>
+        <h2 class="section-title reveal" id="about-title">Who I Am</h2>
+        <div class="section-divider reveal"></div>
+
+        <div class="about__grid">
+          <div class="about__text reveal">
+            <p>I’m a Software Engineer focused on Artificial Intelligence, Machine Learning, and product-driven development. I create intelligent applications that combine strong backend engineering with thoughtful user experiences.</p>
+            <p>My experience includes developing AI-powered platforms, semantic search systems, and scalable web applications using Python, Flask, React, LLMs, RAG, ChromaDB, OpenAI APIs, and Hugging Face.</p>
+            <p>I approach each project with a practical mindset—balancing technical depth, clean engineering, and business value to deliver solutions that are both elegant and dependable.</p>
+            <div class="about__tags">
+              <span class="about__tag">Software Engineering</span>
+              <span class="about__tag">AI &amp; ML</span>
+              <span class="about__tag">Generative AI</span>
+              <span class="about__tag">RAG</span>
+              <span class="about__tag">Semantic Search</span>
+              <span class="about__tag">Full Stack</span>
+              <span class="about__tag">REST APIs</span>
+              <span class="about__tag">Scalable Systems</span>
+            </div>
+          </div>
+
+          <div class="about__stats">
+            <div class="stat-card reveal-scale delay-1">
+              <div class="stat-card__number">10+</div>
+              <div class="stat-card__label">Projects built and deployed</div>
+            </div>
+            <div class="stat-card reveal-scale delay-2">
+              <div class="stat-card__number">6+</div>
+              <div class="stat-card__label">Months of Hands-on internship and training experience</div>
+            </div>
+            <div class="stat-card reveal-scale delay-3">
+              <div class="stat-card__number">1,000+</div>
+              <div class="stat-card__label">AI inference requests supported in production</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <p class="section-label reveal">02. Skills &amp; Tools</p>
+        <h2 class="section-title reveal" id="skills-title">What I Work With</h2>
+        <div class="section-divider reveal"></div>
+
+        <div class="skills__grid">
+          <article class="skill-card reveal delay-1">
+            <h3 class="skill-card__title">Programming</h3>
+            <div class="skill-card__chips">
+              <span class="skill-chip">Python</span>
+              <span class="skill-chip">C++</span>
+              <span class="skill-chip">JavaScript</span>
+              <span class="skill-chip">TypeScript</span>
+              <span class="skill-chip">SQL</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal delay-2">
+            <h3 class="skill-card__title">Generative AI</h3>
+            <div class="skill-card__chips">
+              <span class="skill-chip">LLMs</span>
+              <span class="skill-chip">RAG</span>
+              <span class="skill-chip">Prompt Engineering</span>
+              <span class="skill-chip">OpenAI API</span>
+              <span class="skill-chip">Hugging Face</span>
+              <span class="skill-chip">ChromaDB</span>
+              <span class="skill-chip">Vector Embeddings</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal delay-3">
+            <h3 class="skill-card__title">Machine Learning</h3>
+            <div class="skill-card__chips">
+              <span class="skill-chip">Scikit-learn</span>
+              <span class="skill-chip">Pandas</span>
+              <span class="skill-chip">NumPy</span>
+              <span class="skill-chip">Feature Engineering</span>
+              <span class="skill-chip">Random Forest</span>
+              <span class="skill-chip">Logistic Regression</span>
+              <span class="skill-chip">Linear Regression</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal delay-4">
+            <h3 class="skill-card__title">Backend</h3>
+            <div class="skill-card__chips">
+              <span class="skill-chip">Flask</span>
+              <span class="skill-chip">FastAPI</span>
+              <span class="skill-chip">Node.js</span>
+              <span class="skill-chip">REST APIs</span>
+              <span class="skill-chip">JWT Authentication</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal delay-5">
+            <h3 class="skill-card__title">Frontend</h3>
+            <div class="skill-card__chips">
+              <span class="skill-chip">React</span>
+              <span class="skill-chip">TypeScript</span>
+              <span class="skill-chip">Vite</span>
+              <span class="skill-chip">HTML</span>
+              <span class="skill-chip">CSS</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal delay-6">
+            <h3 class="skill-card__title">Databases</h3>
+            <div class="skill-card__chips">
+              <span class="skill-chip">MySQL</span>
+              <span class="skill-chip">SQLite</span>
+              <span class="skill-chip">ChromaDB</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal delay-7">
+            <h3 class="skill-card__title">Core CS</h3>
+            <div class="skill-card__chips">
+              <span class="skill-chip">DSA</span>
+              <span class="skill-chip">OOP</span>
+              <span class="skill-chip">DBMS</span>
+              <span class="skill-chip">Operating Systems</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal delay-1">
+            <h3 class="skill-card__title">Cloud &amp; DevOps</h3>
+            <div class="skill-card__chips">
+              <span class="skill-chip">AWS EC2</span>
+              <span class="skill-chip">Oracle Cloud Infrastructure</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal delay-2">
+            <h3 class="skill-card__title">Developer Tools</h3>
+            <div class="skill-card__chips">
+              <span class="skill-chip">Git</span>
+              <span class="skill-chip">GitHub</span>
+              <span class="skill-chip">Linux</span>
+              <span class="skill-chip">Jupyter Notebook</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <p class="section-label reveal">03. Work Experience</p>
+        <h2 class="section-title reveal" id="experience-title">Where I've Worked</h2>
+        <div class="section-divider reveal"></div>
+
+        <div class="timeline">
+          <article class="timeline__item reveal">
+            <time class="timeline__date" datetime="2026-01">Jan 2026 — Jul 2026</time>
+            <h3 class="timeline__role">AI &amp; Python Development Trainee</h3>
+            <p class="timeline__company">Creator Space · Chennai, India</p>
+            <ul class="timeline__points">
+              <li class="timeline__point"><span class="timeline__arrow" aria-hidden="true">▹</span><span>Engineered 5+ AI-powered web applications using Python, Flask, LLMs, RAG, ChromaDB, and vector embeddings across multiple real-world use cases.</span></li>
+              <li class="timeline__point"><span class="timeline__arrow" aria-hidden="true">▹</span><span>Designed and implemented RAG-based semantic search pipelines over 400+ indexed documents, improving retrieval through optimized chunking and embeddings.</span></li>
+              <li class="timeline__point"><span class="timeline__arrow" aria-hidden="true">▹</span><span>Reduced AI response latency by implementing asynchronous processing, intelligent caching, and optimized retrieval workflows.</span></li>
+              <li class="timeline__point"><span class="timeline__arrow" aria-hidden="true">▹</span><span>Developed and deployed 6 REST APIs integrating OpenAI and Hugging Face models, supporting 1,000+ AI inference requests.</span></li>
+              <li class="timeline__point"><span class="timeline__arrow" aria-hidden="true">▹</span><span>Collaborated in Agile development using Git, contributing 70+ commits and 25+ pull requests across AI applications.</span></li>
+            </ul>
+            <div class="timeline__tags">
+              <span class="tag">Python</span>
+              <span class="tag">Flask</span>
+              <span class="tag">LLMs</span>
+              <span class="tag">RAG</span>
+              <span class="tag">ChromaDB</span>
+            </div>
+          </article>
+
+          <article class="timeline__item reveal">
+            <time class="timeline__date" datetime="2025-01">Jan 2025 - Feb 2025</time>
+            <div class="timeline__meta">
+              <div>
+                <h3 class="timeline__role">Full-Stack Development Intern</h3>
+                <p class="timeline__company"><a href="https://www.nsic.co.in/" target="_blank" rel="noopener noreferrer">National Small Industries Corporation (Govt. of India)</a></p>
+              </div>
+              <a class="timeline__link" href="https://drive.google.com/file/d/1_2coSf668GcZWYVMDbzcogcC7d8w5r9R/view?usp=sharing" target="_blank" rel="noopener noreferrer">View ⇗</a>
+            </div>
+            <ul class="timeline__points">
+              <li class="timeline__point"><span class="timeline__arrow" aria-hidden="true">▹</span><span>Developed 5+ responsive web modules using HTML, CSS, JavaScript, Flask, and SQL for scalable applications.</span></li>
+              <li class="timeline__point"><span class="timeline__arrow" aria-hidden="true">▹</span><span>Built and integrated 10+ RESTful API endpoints, enabling seamless frontend-backend communication.</span></li>
+              <li class="timeline__point"><span class="timeline__arrow" aria-hidden="true">▹</span><span>Improved application performance through debugging, code optimization, frontend enhancements, testing, and deployment support.</span></li>
+            </ul>
+            <div class="timeline__tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Flask</span>
+              <span class="tag">SQL</span>
+            </div>
+          </article>
+
+          <article class="timeline__item reveal">
+            <time class="timeline__date" datetime="2025-07">Jul 2025 - Aug 2025</time>
+            <div class="timeline__meta">
+              <div>
+                <h3 class="timeline__role">Data Analyst Intern</h3>
+                <p class="timeline__company"><a href="https://www.rit.edu/" target="_blank" rel="noopener noreferrer">Rochester Institute of Technology</a></p>
+              </div>
+              <a class="timeline__link" href="https://drive.google.com/file/d/1AeOW0h6gtAY9J2Mz3Xy22dk2cyWkKHW-/view?usp=sharing" target="_blank" rel="noopener noreferrer">View ⇗</a>
+            </div>
+            <ul class="timeline__points">
+              <li class="timeline__point"><span class="timeline__arrow" aria-hidden="true">▹</span><span>Processed and transformed 500+ records using Python, Pandas, and NumPy for visualization and reporting.</span></li>
+              <li class="timeline__point"><span class="timeline__arrow" aria-hidden="true">▹</span><span>Automated data preprocessing workflows, reducing manual data preparation effort.</span></li>
+              <li class="timeline__point"><span class="timeline__arrow" aria-hidden="true">▹</span><span>Developed backend data processing scripts supporting interactive dashboards and business intelligence reports.</span></li>
+            </ul>
+            <div class="timeline__tags">
+              <span class="tag">Python</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">NumPy</span>
+              <span class="tag">Data Processing</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <p class="section-label reveal">04. Featured Projects</p>
+        <h2 class="section-title reveal" id="projects-title">Things I've Built</h2>
+        <div class="section-divider reveal"></div>
+
+        <div class="projects__grid">
+          <article class="project-card reveal delay-1">
+            <div class="project-card__header">
+              <div class="project-card__icon" aria-hidden="true">🎯</div>
+              <span class="project-card__pill">AI Product</span>
+            </div>
+            <h3 class="project-card__title">AI Career Guidance Platform</h3>
+            <p class="project-card__desc">A refined AI-driven platform that combines retrieval-augmented generation with semantic search to deliver more relevant career guidance insights.</p>
+            <ul class="project-card__highlights">
+              <li>Improved answer quality through optimized chunking, embeddings, and retrieval strategies with ChromaDB</li>
+              <li>Reduced latency with caching and asynchronous request handling for smoother user experience</li>
+              <li>Built with Flask, React, and an intelligent RAG-powered backend</li>
+            </ul>
+            <div class="project-card__links">
+              <a class="project-card__link" href="https://github.com/thaharasul" target="_blank" rel="noopener noreferrer">GitHub ⇗</a>
+              <a class="project-card__link project-card__link--live" href="https://careerguide-gxiz.onrender.com" target="_blank" rel="noopener noreferrer">Live Demo ⇗</a>
+            </div>
+            <div class="project-card__tags">
+              <span class="project-card__tag">Python</span>
+              <span class="project-card__tag">Flask</span>
+              <span class="project-card__tag">React</span>
+              <span class="project-card__tag">RAG</span>
+              <span class="project-card__tag">ChromaDB</span>
+              <span class="project-card__tag">OpenAI</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal delay-2">
+            <div class="project-card__header">
+              <div class="project-card__icon" aria-hidden="true">🩺</div>
+              <span class="project-card__pill">Healthcare</span>
+            </div>
+            <h3 class="project-card__title">Camp Line</h3>
+            <p class="project-card__desc">A full-stack medical camp management platform that streamlines patient workflows, prescriptions, and inventory tracking.</p>
+            <ul class="project-card__highlights">
+              <li>Built secure backend services with Supabase, PostgreSQL, Edge Functions, and Twilio for real-time updates</li>
+              <li>Enabled smoother patient handling through automated registration and voice-based symptom capture</li>
+              <li>Reduced manual processing with structured prescription and inventory management</li>
+            </ul>
+            <div class="project-card__links">
+              <a class="project-card__link" href="https://github.com/thaharasul" target="_blank" rel="noopener noreferrer">GitHub ⇗</a>
+              <a class="project-card__link project-card__link--live" href="https://digitized-medical-campaign.onrender.com" target="_blank" rel="noopener noreferrer">Live Demo ⇗</a>
+            </div>
+            <div class="project-card__tags">
+              <span class="project-card__tag">React</span>
+              <span class="project-card__tag">Vite</span>
+              <span class="project-card__tag">Supabase</span>
+              <span class="project-card__tag">PostgreSQL</span>
+              <span class="project-card__tag">Twilio</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal delay-3">
+            <div class="project-card__header">
+              <div class="project-card__icon" aria-hidden="true">📚</div>
+              <span class="project-card__pill">Recommendation</span>
+            </div>
+            <h3 class="project-card__title">Intelligent Book Recommendation System</h3>
+            <p class="project-card__desc">An AI-based recommendation experience that uses LLMs and RAG to surface context-aware book suggestions from structured knowledge.</p>
+            <ul class="project-card__highlights">
+              <li>Indexed and retrieved information from 200+ book records using semantic embeddings</li>
+              <li>Designed modular AI workflows for personalized and meaningful recommendations</li>
+              <li>Built intelligent retrieval pipelines for fast, relevant outcomes</li>
+            </ul>
+            <div class="project-card__links">
+              <a class="project-card__link" href="https://github.com/thaharasul" target="_blank" rel="noopener noreferrer">GitHub ⇗</a>
+              <a class="project-card__link project-card__link--live" href="https://bookrecommendationagent.onrender.com" target="_blank" rel="noopener noreferrer">Live Demo ⇗</a>
+            </div>
+            <div class="project-card__tags">
+              <span class="project-card__tag">Python</span>
+              <span class="project-card__tag">LLMs</span>
+              <span class="project-card__tag">RAG</span>
+              <span class="project-card__tag">ChromaDB</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal delay-4">
+            <div class="project-card__header">
+              <div class="project-card__icon" aria-hidden="true">🚔</div>
+              <span class="project-card__pill">AI System</span>
+            </div>
+            <h3 class="project-card__title">AI Crime Analyzer Dashboard</h3>
+            <p class="project-card__desc">An analytical AI platform that combines machine learning, retrieval methods, and agentic workflows to support decision-friendly insights.</p>
+            <ul class="project-card__highlights">
+              <li>Processed complex crime datasets to generate predictive insights and interactive dashboards</li>
+              <li>Optimized retrieval workflows to improve performance and analytical responsiveness</li>
+              <li>Delivered a clear, decision-oriented experience through agentic AI integration</li>
+            </ul>
+            <div class="project-card__links">
+              <a class="project-card__link" href="https://github.com/thaharasul" target="_blank" rel="noopener noreferrer">GitHub ⇗</a>
+              <a class="project-card__link project-card__link--live" href="https://ai-crime-analyzer-dashboard.onrender.com" target="_blank" rel="noopener noreferrer">Live Demo ⇗</a>
+            </div>
+            <div class="project-card__tags">
+              <span class="project-card__tag">Flask</span>
+              <span class="project-card__tag">Machine Learning</span>
+              <span class="project-card__tag">Agentic AI</span>
+              <span class="project-card__tag">RAG</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section" id="education" aria-labelledby="education-title">
+      <div class="container">
+        <p class="section-label reveal">05. Education</p>
+        <h2 class="section-title reveal" id="education-title">Academic Background</h2>
+        <div class="section-divider reveal"></div>
+
+        <div class="education__grid">
+          <article class="edu-card reveal delay-1">
+            <time class="edu-card__year" datetime="2023/2027">2023 — 2027</time>
+            <h3 class="edu-card__degree">B.E. Computer Science Engineering</h3>
+            <p class="edu-card__institution">Anna University</p>
+            <p class="edu-card__score">CGPA: 9.1 / 10</p>
+            <p class="edu-card__meta">Expected Graduation: 2027</p>
+            <div class="edu-card__links">
+              <a class="edu-card__link" href="https://drive.google.com/file/d/1kY9bPk8AurdAOHLlpG63tP0VmI-2-pp2/view?usp=sharing" target="_blank" rel="noopener noreferrer">view⇗</a>
+            </div>
+          </article>
+
+          <article class="edu-card reveal delay-2">
+            <time class="edu-card__year" datetime="2023">2023</time>
+            <h3 class="edu-card__degree">Higher Secondary Education</h3>
+            <p class="edu-card__institution">Bethel Matric Hr. Sec. School</p>
+            <p class="edu-card__score">Percentage: 85%</p>
+            <div class="edu-card__links">
+              <a class="edu-card__link" href="https://drive.google.com/file/d/1MzgrMyyjyvmjblNgToHaw5EA6bUYWJNd/view?usp=sharing" target="_blank" rel="noopener noreferrer">view⇗</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="section" id="certifications" aria-labelledby="certifications-title">
+      <div class="container">
+        <p class="section-label reveal">06. Certifications</p>
+        <h2 class="section-title reveal" id="certifications-title">Selected Credentials</h2>
+        <div class="section-divider reveal"></div>
+
+        <div class="certifications__grid">
+          <article class="cert-card reveal delay-1">
+            <div class="cert-card__icon" aria-hidden="true">🎓</div>
+            <div>
+              <h3 class="cert-card__title">CSI Accredited Student</h3>
+              <p class="cert-card__issuer">Computer Society of India</p>
+              <p class="cert-card__desc">Recognized for active involvement in technical community engagement and leadership.</p>
+              <a class="cert-card__link" href="https://drive.google.com/file/d/1SUZ93fb5dG8ic5D9ELB9Mc099h-YRDFR/view?usp=sharing" target="_blank" rel="noopener noreferrer">view⇗</a>
+            </div>
+          </article>
+
+          <article class="cert-card reveal delay-2">
+            <div class="cert-card__icon" aria-hidden="true">💻</div>
+            <div>
+              <h3 class="cert-card__title">Crash Course in Python</h3>
+              <p class="cert-card__issuer">Google · Coursera</p>
+              <p class="cert-card__desc">Strengthened foundational Python skills and practical programming confidence.</p>
+              <a class="cert-card__link" href="https://coursera.org/verifv/FVZ8XSIYES89" target="_blank" rel="noopener noreferrer">view⇗</a>
+            </div>
+          </article>
+          <article class="cert-card reveal delay-7">
+            <div class="cert-card__icon" aria-hidden="true">📈</div>
+            <div>
+              <h3 class="cert-card__title">Data Analyst Certification</h3>
+              <p class="cert-card__issuer">RIT / Data Analytics</p>
+              <p class="cert-card__desc">Verified credential for data analysis, reporting, and visualization workflows.</p>
+              <a class="cert-card__link" href="https://drive.google.com/file/d/1AeOW0h6gtAY9J2Mz3Xy22dk2cyWkKHW-/view?usp=sharing" target="_blank" rel="noopener noreferrer">view⇗</a>
+            </div>
+          </article>
+
+          <article class="cert-card reveal delay-3">
+            <div class="cert-card__icon" aria-hidden="true">🤖</div>
+            <div>
+              <h3 class="cert-card__title">AI Foundations for Engineers</h3>
+              <p class="cert-card__issuer">Rochester Institute of Technology</p>
+              <p class="cert-card__desc">Built a strong base in applied AI concepts and intelligent system design.</p>
+              <a class="cert-card__link" href="https://experience.4excelerate.org/verifications/certificate/9000c0200000e010-0c0508080-040005010-1a00Ra8fY-0aF451B1T0H964J1183744K52/Rasul%20M" target="_blank" rel="noopener noreferrer">view⇗</a>
+            </div>
+          </article>
+
+          <article class="cert-card reveal delay-4">
+            <div class="cert-card__icon" aria-hidden="true">📊</div>
+            <div>
+              <h3 class="cert-card__title">Data Visualization Analyst</h3>
+              <p class="cert-card__issuer">Saint Louis University</p>
+              <p class="cert-card__desc">Developed expertise in data analysis, visualization, and insight communication.</p>
+              <a class="cert-card__link" href="https://experience.4excelerate.org/verifications/certificate/9000c0200000e010-0c0508080-040005010-1a00GaXfD-9aC4F1H1Z0B994K1B8F7X4G5W/Rasul%20M" target="_blank" rel="noopener noreferrer">view⇗</a>
+            </div>
+          </article>
+
+          <article class="cert-card reveal delay-5">
+            <div class="cert-card__icon" aria-hidden="true">🐍</div>
+            <div>
+              <h3 class="cert-card__title">NPTEL Joy of Computing in Python</h3>
+              <p class="cert-card__issuer">IIT Madras</p>
+              <p class="cert-card__desc">Completed a rigorous Python learning path with strong emphasis on problem-solving.</p>
+              <a class="cert-card__link" href="https://nptel.ac.in/noc/E_Certificate/NPTEL24CS57S75340816130768981" target="_blank" rel="noopener noreferrer">view⇗</a>
+            </div>
+          </article>
+
+          <article class="cert-card reveal delay-6">
+            <div class="cert-card__icon" aria-hidden="true">🗣️</div>
+            <div>
+              <h3 class="cert-card__title">Aptis English Fluency Test</h3>
+              <p class="cert-card__issuer">British Council</p>
+              <p class="cert-card__desc">Validated strong communication skills and professional English fluency.</p>
+              <a class="cert-card__link" href="https://credentials.britishcouncil.org/c410ac40-086c-44b6-8bfd-23038cbb8c51?key=852f8a53d9733341e7bc005f9e6ea506018fa7506e70e2e033cea32ecd1a8de1#acc.jxNEFPMw" target="_blank" rel="noopener noreferrer">view⇗</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership -->
+    <section class="section" id="leadership" aria-labelledby="leadership-title">
+      <div class="container">
+        <p class="section-label reveal">Leadership &amp; Recognition</p>
+        <h2 class="section-title reveal" id="leadership-title">Beyond the Code</h2>
+        <div class="section-divider reveal"></div>
+
+        <div class="leadership__grid">
+          <article class="leadership-card reveal delay-1">
+            <h3 class="leadership-card__title">Office Bearer, Computer Society of India</h3>
+            <p class="leadership-card__desc">Coordinated technical initiatives and supported student engagement through well-organized events and community-building efforts.</p>
+            <a class="leadership-card__link" href="https://drive.google.com/file/d/1SUZ93fb5dG8ic5D9ELB9Mc099h-YRDFR/view?usp=sharing" target="_blank" rel="noopener noreferrer">view⇗</a>
+          </article>
+          <article class="leadership-card reveal delay-2">
+            <h3 class="leadership-card__title">IEEE Student Member</h3>
+            <p class="leadership-card__desc">Stayed connected with emerging technologies and research-driven learning through professional networking and academic exposure.</p>
+            <a class="leadership-card__link" href="https://drive.google.com/file/d/1gONfFcfiKzSYxzo1k5BXXQ8BEAfJIS1q/view?usp=sharing" target="_blank" rel="noopener noreferrer">view⇗</a>
+          </article>
+          <article class="leadership-card reveal delay-3">
+            <h3 class="leadership-card__title">Best Student Award</h3>
+            <p class="leadership-card__desc">Recognized for strong communication, presentation skills, and consistent dedication in the English Fluency Program.</p>
+            <a class="leadership-card__link" href="https://drive.google.com/file/d/1vkgc7E3xemkiv-QEnOc5-A-IMx7l6GpM/view?usp=sharing" target="_blank" rel="noopener noreferrer">view⇗</a>
+          </article>
+          <article class="leadership-card reveal delay-4">
+            <h3 class="leadership-card__title">Runner Up - National Level Servathon</h3>
+            <p class="leadership-card__desc">Earned second place in the RIT national-level servathon for social impact and teamwork excellence.</p>
+            <a class="leadership-card__link" href="https://drive.google.com/file/d/1OB2bpsy7o4psSB44M3mJitNFNn5EWOdn/view?usp=sharing" target="_blank" rel="noopener noreferrer">view⇗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Languages -->
+    <section class="section" id="languages" aria-labelledby="languages-title">
+      <div class="container">
+        <p class="section-label reveal">Languages</p>
+        <h2 class="section-title reveal" id="languages-title">Languages I Speak</h2>
+        <div class="section-divider reveal"></div>
+
+        <div class="languages__grid reveal">
+          <span class="language-tag"><span class="language-name">English</span> <span class="language-level">- Fluent</span></span>
+          <span class="language-tag"><span class="language-name">Tamil</span> <span class="language-level">- Native</span></span>
+          <span class="language-tag"><span class="language-name">Arabic</span> <span class="language-level">- Pursuing</span></span>
+          <span class="language-tag"><span class="language-name">Japanese</span> <span class="language-level">- Beginner</span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <p class="section-label reveal">07. Get In Touch</p>
+        <h2 class="section-title reveal" id="contact-title">Contact Me</h2>
+        <div class="section-divider reveal"></div>
+
+        <div class="contact__grid">
+          <div class="reveal-left">
+            <div class="contact__text">
+              <p>I’m currently focused on building AI-driven products and full-stack experiences that create real value for users. I’m open to opportunities where I can contribute with Python, AI systems, Flask, React, and thoughtful product engineering.</p>
+              <p>If you're looking for someone who enjoys turning ideas into dependable software, I’d be glad to connect.</p>
+            </div>
+
+            <div class="contact__details">
+              <a href="mailto:thaharasxl@gmail.com" class="contact__row">
+                <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
+                thaharasxl@gmail.com
+              </a>
+              <a href="tel:+919042268022" class="contact__row">
+                <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                +91 9042268022
+              </a>
+              <div class="contact__row">
+                <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Chennai · Tamil Nadu · India
+              </div>
+            </div>
+
+            <div class="contact__socials">
+              <a href="mailto:thaharasxl@gmail.com" class="social-icon-btn" aria-label="Email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/mdthaharasul001" class="social-icon-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+              <a href="{{ url_for('static', filename='assets/resume/Mohamed_Thaha_Rasul_Resume.pdf') }}" class="social-icon-btn" download="Mohamed_Thaha_Rasul_Resume.pdf" aria-label="Download resume">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              </a>
+            </div>
+          </div>
+
+        <form class="contact-form reveal delay-2" id="contactForm" novalidate>
+
+  <div class="form-group">
+    <label class="form-label" for="name">Your Name</label>
+    <input
+      class="form-input"
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Enter your name..."
+      required
+      autocomplete="name"
+    >
+  </div>
+
+  <div class="form-group">
+    <label class="form-label" for="email">Your Email</label>
+    <input
+      class="form-input"
+      type="email"
+      id="email"
+      name="email"
+      placeholder="Enter your email..."
+      required
+      autocomplete="email"
+    >
+  </div>
+
+  <div class="form-group">
+    <label class="form-label" for="subject">Subject</label>
+    <input
+      class="form-input"
+      type="text"
+      id="subject"
+      name="subject"
+      placeholder="Enter the subject..."
+      required
+    >
+  </div>
+
+  <div class="form-group">
+    <label class="form-label" for="message">Your Message</label>
+    <textarea
+      class="form-textarea"
+      id="message"
+      name="message"
+      placeholder="Enter your message here..."
+      required
+    ></textarea>
+  </div>
+
+  <div class="form-submit">
+    <button type="submit" class="btn btn--primary">
+      Send Message →
+    </button>
+  </div>
+
+  <div
+    class="form-status"
+    id="formStatus"
+    role="alert"
+    aria-live="polite"
+  ></div>
+
+</form>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__logo">&lt;Mohamed Thaha Rasul/&gt;</div>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="#about" class="footer__link">About</a>
+        <a href="#experience" class="footer__link">Experience</a>
+        <a href="#projects" class="footer__link">Projects</a>
+        <a href="#contact" class="footer__link">Contact</a>
+      </nav>
+      <div class="footer__socials">
+        <a href="mailto:thaharasxl@gmail.com" class="social-icon-btn" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/mdthaharasul001" class="social-icon-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://github.com/thaharasul" class="social-icon-btn" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297a12 12 0 00-3.79 23.02c.6.11.82-.26.82-.58v-2.04c-3.34.73-4.04-1.43-4.04-1.43-.54-1.38-1.32-1.75-1.32-1.75-1.08-.74.08-.72.08-.72 1.2.08 1.83 1.24 1.83 1.24 1.06 1.82 2.78 1.29 3.46.99.11-.77.42-1.29.76-1.59-2.67-.31-5.47-1.34-5.47-5.95 0-1.32.47-2.4 1.24-3.25-.12-.31-.54-1.55.12-3.23 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 016.02 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.68.24 2.92.12 3.23.77.85 1.24 1.93 1.24 3.25 0 4.62-2.8 5.64-5.47 5.95.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.58A12 12 0 0012 .297z"/></svg>
+        </a>
+      </div>
+      <p class="footer__copy">&copy; <span id="currentYear">2026</span> Mohamed Thaha Rasul · Software Engineer &amp; AI/ML Developer</p>
+      <button class="footer__back-top" id="footerBackTop" aria-label="Back to top">↑ Back to top</button>
+    </div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  </div>
+
+  <script src="{{ url_for('static', filename='js/navigation.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/scroll.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/animations.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/counters.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
